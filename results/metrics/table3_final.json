@@ -1,0 +1,100 @@
+{
+  "seeds": [
+    42
+  ],
+  "n_images_per_seed": 44,
+  "n_defect_masks_per_seed": 9,
+  "mean_unperturbed_confidence": 0.9954024214636196,
+  "rollout_gradcam_iou_mean": 0.4664671724523721,
+  "rollout_gradcam_iou_std": 0.09597195821466922,
+  "rollout_gradcam_iou_per_seed": [
+    0.4664671724523721
+  ],
+  "fisher_p_gradcam_vs_rollout": 0.29411764705882354,
+  "protocol": "Deletion/Insertion AUC over 21 points (unperturbed endpoint included), integrated over x in [0,1], per-image confidence normalised by the unperturbed confidence. Pointing-game outcomes over 9 masked defect images with Wilson 95% intervals. The random control is a uniform random saliency map passed through the identical pipeline.",
+  "per_method": {
+    "Attention Rollout": {
+      "deletion_auc_mean": 0.25499003143025606,
+      "deletion_auc_std": 0.0,
+      "insertion_auc_mean": 0.23656810896774785,
+      "insertion_auc_std": 0.0,
+      "ins_minus_del": -0.018421922462508206,
+      "deletion_auc_unnormalised_mean": 0.2514766290141639,
+      "deletion_per_seed": [
+        0.25499003143025606
+      ],
+      "insertion_per_seed": [
+        0.23656810896774785
+      ],
+      "pointing_hits": 1,
+      "pointing_n": 9,
+      "pointing_acc_pct": 11.11111111111111,
+      "pointing_ci95_pct": [
+        1.9890371327130536,
+        43.50062147680601
+      ],
+      "pointing_per_seed": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fisher_p_vs_random": 1.0
+    },
+    "Grad-CAM (ViT)": {
+      "deletion_auc_mean": 0.609847297989466,
+      "deletion_auc_std": 0.0,
+      "insertion_auc_mean": 0.7543323086339278,
+      "insertion_auc_std": 0.0,
+      "ins_minus_del": 0.14448501064446173,
+      "deletion_auc_unnormalised_mean": 0.6089111413939196,
+      "deletion_per_seed": [
+        0.609847297989466
+      ],
+      "insertion_per_seed": [
+        0.7543323086339278
+      ],
+      "pointing_hits": 4,
+      "pointing_n": 9,
+      "pointing_acc_pct": 44.44444444444444,
+      "pointing_ci95_pct": [
+        18.8775429471914,
+        73.33526542559703
+      ],
+      "pointing_per_seed": [
+        [
+          4,
+          9
+        ]
+      ],
+      "fisher_p_vs_random": 0.08235294117647059
+    },
+    "Random saliency (control)": {
+      "deletion_auc_mean": 0.6321497618015309,
+      "deletion_auc_std": 0.0,
+      "insertion_auc_mean": 0.6282572408102148,
+      "insertion_auc_std": 0.0,
+      "ins_minus_del": -0.003892520991316095,
+      "deletion_auc_unnormalised_mean": 0.6305854898793819,
+      "deletion_per_seed": [
+        0.6321497618015309
+      ],
+      "insertion_per_seed": [
+        0.6282572408102148
+      ],
+      "pointing_hits": 0,
+      "pointing_n": 9,
+      "pointing_acc_pct": 0.0,
+      "pointing_ci95_pct": [
+        0.0,
+        29.91527535509594
+      ],
+      "pointing_per_seed": [
+        [
+          0,
+          9
+        ]
+      ]
+    }
+  }
+}

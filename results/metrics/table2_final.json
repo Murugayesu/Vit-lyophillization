@@ -1,0 +1,194 @@
+{
+  "class_names": [
+    "collapse",
+    "defect_free",
+    "meltback",
+    "skinning"
+  ],
+  "seeds": [
+    42,
+    123,
+    7
+  ],
+  "per_model": {
+    "ResNet-50": {
+      "macro_f1_per_seed": [
+        0.8125,
+        0.7823412698412698,
+        0.77981220657277
+      ],
+      "macro_f1_mean": 0.7915511588046801,
+      "macro_f1_std_pop": 0.014849006719285374,
+      "macro_f1_std_sample": 0.018186244824704007,
+      "macro_precision_mean": 0.8834584584584585,
+      "macro_precision_std_pop": 0.04152541159044311,
+      "macro_recall_mean": 0.7777777777777778,
+      "macro_recall_std_pop": 0.03928371006591935,
+      "accuracy_mean": 0.9393939393939393,
+      "total_params": 23516228,
+      "trainable_params": 23516228,
+      "trainable_frac": 1.0,
+      "best_seed": 42,
+      "best_confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "best_macro_f1": 0.8125
+    },
+    "ViT-B/16": {
+      "macro_f1_per_seed": [
+        0.9142857142857143,
+        0.9142857142857143,
+        0.7013888888888888
+      ],
+      "macro_f1_mean": 0.8433201058201059,
+      "macro_f1_std_pop": 0.10036052595412243,
+      "macro_f1_std_sample": 0.12291603945247391,
+      "macro_precision_mean": 0.8982732732732733,
+      "macro_precision_std_pop": 0.05547496894444012,
+      "macro_recall_mean": 0.8333333333333334,
+      "macro_recall_std_pop": 0.11785113019775792,
+      "accuracy_mean": 0.9545454545454546,
+      "total_params": 85801732,
+      "trainable_params": 14332420,
+      "trainable_frac": 0.16704115017165388,
+      "best_seed": 42,
+      "best_confusion_matrix": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "best_macro_f1": 0.9142857142857143
+    }
+  },
+  "seed_level_test": {
+    "paired_t": 0.7882507418979046,
+    "paired_p": 0.5131414800687961,
+    "mean_diff": 0.05176894701542586,
+    "diff_per_seed": [
+      0.10178571428571426,
+      0.13194444444444442,
+      -0.07842331768388111
+    ],
+    "ci95": [
+      -0.23081093442669962,
+      0.3343488284575513
+    ],
+    "n_seeds": 3
+  },
+  "image_level_bootstrap": {
+    "n_boot": 10000,
+    "mean_diff": 0.05791576255832708,
+    "ci95": [
+      -0.16664157382314565,
+      0.25388888888888894
+    ],
+    "p_two_sided": 0.5416
+  },
+  "per_class": {
+    "collapse": {
+      "support": 3.0,
+      "vit_f1_mean": 0.7555555555555555,
+      "vit_f1_ci95": [
+        0.0,
+        1.0
+      ],
+      "vit_recall_mean": 0.6666666666666666,
+      "resnet_f1_mean": 0.7579365079365079,
+      "resnet_f1_ci95": [
+        0.0,
+        0.9333333333333332
+      ],
+      "resnet_recall_mean": 0.8888888888888888
+    },
+    "defect_free": {
+      "support": 35.0,
+      "vit_f1_mean": 0.9907407407407408,
+      "vit_f1_ci95": [
+        0.9765258215962441,
+        1.0
+      ],
+      "vit_recall_mean": 1.0,
+      "resnet_f1_mean": 0.9860459050599896,
+      "resnet_f1_ci95": [
+        0.967889003136275,
+        1.0
+      ],
+      "resnet_recall_mean": 1.0
+    },
+    "meltback": {
+      "support": 3.0,
+      "vit_f1_mean": 0.7936507936507936,
+      "vit_f1_ci95": [
+        0.0,
+        1.0
+      ],
+      "vit_recall_mean": 0.8888888888888888,
+      "resnet_f1_mean": 0.6555555555555556,
+      "resnet_f1_ci95": [
+        0.0,
+        0.7738095238095237
+      ],
+      "resnet_recall_mean": 0.5555555555555555
+    },
+    "skinning": {
+      "support": 3.0,
+      "vit_f1_mean": 0.8333333333333334,
+      "vit_f1_ci95": [
+        0.0,
+        1.0
+      ],
+      "vit_recall_mean": 0.7777777777777778,
+      "resnet_f1_mean": 0.7666666666666666,
+      "resnet_f1_ci95": [
+        0.0,
+        1.0
+      ],
+      "resnet_recall_mean": 0.6666666666666666
+    }
+  },
+  "n_boot_per_class": 2000
+}

@@ -1,0 +1,15 @@
+{
+  "Attention Rollout": {
+    "Deletion AUC (lower better)": 0.2107008864343692,
+    "Insertion AUC (higher better)": 0.21820940567300695,
+    "Pointing-Game Accuracy (%)": 11.11111111111111
+  },
+  "Grad-CAM": {
+    "Deletion AUC (lower better)": 0.5704839880405271,
+    "Insertion AUC (higher better)": 0.73646950993904,
+    "Pointing-Game Accuracy (%)": 44.44444444444444
+  },
+  "IoU between methods (mean)": 0.46646717245227814,
+  "n_images_evaluated": 44,
+  "n_defect_masks_evaluated": 9
+}
